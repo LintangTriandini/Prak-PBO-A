@@ -1,28 +1,19 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        
-        Karyawan Ridho = new Karyawan("12345", "Ridho");
-        Karyawan Melan = new Karyawan("12346","Melan");
+        Spider kiti = new Spider();
+        kiti.eat();
 
-        Ridho.getInfo();
-        Ridho.absenPagi();
-        Ridho.kerja();
-        Melan.getInfo();
-        Melan.absenPagi();
-        Melan.kerja();
-        Ridho.absenPulang();
-        Melan.absenPulang();
+        Dog guguk = new Dog();
+        guguk.setName("snowy");
+        System.out.println("Saya adalah " + guguk.getName());
+        guguk.play();
+        guguk.eat();
+        guguk.walk();
 
-        Dosen Andiani = new Dosen("23455", "Andiani", "332211");
-        Dosen Ionia  = new Dosen("23456", "Ionia", "332212");
-
-        Andiani.getInfo();
-        Andiani.absenPagi();
-        Andiani.ngajar();
-        Ionia.getInfo();
-        Ionia.absenPagi();
-        Ionia.kerja();
-        Ionia.absenPulang();
-        Andiani.absenPulang();        
+        Cat meong = new Cat("Iciro");
+        System.out.println("Saya adalah " + meong.getName());
+        meong.play();
+        meong.eat();
+        meong.walk();
     }
 }
